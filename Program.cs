@@ -27,7 +27,7 @@ do
             Console.Write("O valor da soma é: ");
             break;
         case "-":
-            resultado = numero1 - numero2;
+            resultado = Subtracao(numero1, numero2);
             Console.Write("O valor da subtração é: ");
             break;
         case "/":
@@ -35,7 +35,7 @@ do
             Console.Write("O valor da divisão é: ");
             break;
         case "*":
-            resultado = numero1 * numero2;
+            resultado = Multiplicacao(numero1, numero2);
             Console.Write("O valor da multiplicação é: ");
             break;
         case "^":
@@ -135,3 +135,15 @@ double Divisao(double dividendo, double divisor)
         return dividendo / divisor;
     }
 }
+
+double Multiplicacao(double numero01, double numero02)
+{
+        return numero01 * numero02;
+}
+
+double Subtracao(double numero01, double numero02)
+{
+    return numero01 - numero02;
+}
+
+    
